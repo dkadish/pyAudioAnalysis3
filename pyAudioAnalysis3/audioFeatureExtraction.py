@@ -1,24 +1,17 @@
-import sys
-import time
-import os
 import glob
-import numpy
-import pickle
-import aifc
 import math
-from numpy import NaN, Inf, arange, isscalar, array
-from scipy.fftpack import rfft
+import os
+import time
+
+import matplotlib.pyplot as plt
+import numpy
 from scipy.fftpack import fft
 from scipy.fftpack.realtransforms import dct
-from scipy.signal import fftconvolve
-from matplotlib.mlab import find
-import matplotlib.pyplot as plt
-from scipy import linalg as la
-from . import audioTrainTest as aT
+from scipy.signal import lfilter
+
 from . import audioBasicIO
 from . import utilities
-from scipy.signal import lfilter, hamming
-import imp
+
 #from scikits.talkbox import lpc
 
 
