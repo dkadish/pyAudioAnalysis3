@@ -1,23 +1,22 @@
-import numpy
-import sklearn.cluster
-import time
-import scipy
-import os
-from . import audioFeatureExtraction as aF
-from . import audioTrainTest as aT
-from . import audioBasicIO
-import matplotlib.pyplot as plt
-from scipy.spatial import distance
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-import sklearn.discriminant_analysis
 import csv
+import glob
+import os
 import os.path
+import pickle
+
+import hmmlearn.hmm
+import matplotlib.pyplot as plt
+import numpy
+import scipy
 import sklearn
 import sklearn.cluster
-import hmmlearn.hmm
-import pickle
-import glob
+import sklearn.cluster
+import sklearn.discriminant_analysis
+from scipy.spatial import distance
+
+from . import audioBasicIO
+from . import audioFeatureExtraction as aF
+from . import audioTrainTest as aT
 
 """ General utility functions """
 

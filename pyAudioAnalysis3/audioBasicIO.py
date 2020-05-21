@@ -1,7 +1,12 @@
-import os, glob, eyed3, ntpath, shutil, numpy
-import scipy.io.wavfile as wavfile
-import pydub
+import eyed3
+import glob
+import ntpath
+import numpy
+import os
+import shutil
+
 from pydub import AudioSegment
+
 
 def convertDirMP3ToWav(dirName, Fs, nC, useMp3TagsAsName = False):
     '''

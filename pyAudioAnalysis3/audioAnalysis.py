@@ -1,25 +1,18 @@
 #!/usr/bin/env python2.7
 import argparse
-import os
-import audioop
-import numpy
 import glob
-import scipy
-import subprocess
-import wave
-import pickle
-import threading
-import shutil
-import ntpath
-import matplotlib.pyplot as plt
-from . import audioFeatureExtraction as aF
-from . import audioTrainTest as aT
-from . import audioSegmentation as aS
-from . import audioVisualization as aV
-from . import audioBasicIO
-from . import utilities as uT
-import scipy.io.wavfile as wavfile
+import os
+
 import matplotlib.patches
+import matplotlib.pyplot as plt
+import numpy
+import scipy.io.wavfile as wavfile
+
+from . import audioBasicIO
+from . import audioFeatureExtraction as aF
+from . import audioSegmentation as aS
+from . import audioTrainTest as aT
+from . import audioVisualization as aV
 
 
 def dirMp3toWavWrapper(directory, samplerate, channels):
